@@ -122,6 +122,14 @@ st.markdown("""
     </div>
     """, unsafe_allow_html=True)
 
+# Display Logo
+col1, col2, col3 = st.columns([1, 2, 1])
+with col2:
+    try:
+        st.image("logo.png", width=200, use_column_width=False)
+    except:
+        st.warning("Logo file not found. Please ensure logo.png is in the root directory.")
+
 # =======================
 # KPI HEADER SECTION
 # =======================
